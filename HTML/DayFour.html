@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Day Four of Bootcamp</title>
+  </head>
+  <body>
+    <!--
+
+    <form></form>
+      <label for="FirstName">First Name</label>
+      <input
+        type="text"
+        name="FirstName"
+      />
+      <br />
+    </form>
+-->
+
+    <fieldset>
+      <form action="./login.html">
+        <legend>User Login Form</legend>
+        <label for="email">Email Address</label>
+        <input
+          type="email"
+          name="email"
+          required
+        /><br />
+        <label for="userName">Username</label>
+        <input
+          type="text"
+          name="userName"
+          required
+        />
+        <br />
+        <label for="userPassword">Password</label>
+        <input
+          type="password"
+          name="userPassword"
+          required
+        /><br />
+        <input
+          type="submit"
+          value="Log In"
+        />
+      </form>
+    </fieldset>
+    <br /><br /><br />
+
+    <form action="/HTML/login.html">
+      <fieldset>
+        <legend>Student Registration Form</legend>
+        <input
+          type="email"
+          placeholder="E-mail*"
+          required
+        />
+        <br /><br />
+        <input
+          type="text"
+          placeholder="Name*"
+          required
+        /><br /><br />
+        <input
+          type="password"
+          placeholder="Password*"
+          minlength="5"
+          required
+        /><br /><br />
+        <label
+          for=""
+          style="color: gray"
+          >Date|</label
+        ><input type="date" /> <br /><br />
+        <input type="file" />
+        <br /><br />
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Describe..."
+          minlength="10"
+        ></textarea>
+        <br /><br />
+        <input
+          type="submit"
+          value="login"
+        />
+        <input
+          type="reset"
+          value="CLEAR ALL"
+        />
+        <input
+          type="image"
+          src="/HTML/image/carrotcake.jpg"
+          height="30px"
+          width="30px"
+          onclick="submit()"
+        />
+      </fieldset>
+    </form>
+  </body>
+</html>
