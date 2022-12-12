@@ -1,0 +1,36 @@
+.p2 {
+    background-color:darkkhaki;
+}
+
+#p3 {
+    background-color: gainsboro;
+}
+
+/* Font in CSS 
+
+.myp1 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    font-variant: small-caps;
+    
+} */
+
+/* colour in css
+
+- NAME OFcolour
+- Hexadecimal
+- RGB or RGBA (ALPHA Parameter 0 to 1 transparency) (rgb can be 0-255)
+- HSL (hue saturation and lightness)
+----Hue - degree of colour 0-360
+----Saturation - take percentage value
+----lightness - take percentage value = 0% completely black, 100% completely white.
+- HSLA - A(alpha is transparency. value 0-1
+
+*/
+
+
+
+.myp2 {
+
+}
