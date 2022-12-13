@@ -1,0 +1,63 @@
+/* CSS Background & Border 
+
+
+body {
+background-color: blanchedalmond;
+background-image: url(/);
+background-repeat:no-repeat;
+background-position: center; 
+background-attachment: fixed; OR scroll; Makes background pic scrollable or not
+- SHORT HAND METHOD OF ABOVE -
+background: url(/) no-repeat center top; <-- image repeat and position and attachment all in one!
+}
+
+*/
+
+
+/* CSS border 
+
+div1 {
+    border-style:dotted;
+    border-color: blueviolet;
+    border-width: 7px;
+    border-top-width: 10px;
+    border-top-color: chartreuse;
+    border-radius: 50%; <-- makes it circle
+
+    border: 4px dashed red; width style color
+
+
+}
+
+sgfesgw {
+    margin: 5px 10px 5px 10px;
+    same for padding
+    cursor: pointer;
+
+*/
+
+.css-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.p1 p {
+background-color: burlywood;
+}
+
+.p2 p {
+    background-size: 20%;
+background-image: url(https://images.pexels.com/photos/220182/pexels-photo-220182.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+background-repeat: no-repeat;
+background-position: center center;
+background-attachment: fixed;
+}
+
+.p3 {
+    height: 300px;
+    width: 60%;
+background-image: url(https://images.pexels.com/photos/220182/pexels-photo-220182.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+border-style: dotted;
+border-radius: 10%;
+}
