@@ -1,0 +1,65 @@
+.div1 {
+    border: 2px solid black;
+   width: 1200px;
+   margin: 0 auto;
+    display: flow-root;
+    
+}
+
+.div p {
+   width: auto;
+    display: inline-block;
+}
+
+img {
+height: 200px;
+width: 200px;
+margin: 10px 20px;
+border-radius: 5%;
+display: inline-block;
+}
+
+.image1 {
+    float: left;
+    clear:left;
+    
+}
+
+.image2 {
+ float: right;
+ clear: right;
+ position: relative;
+ top: -10px;
+
+}
+
+/*position divs */
+
+.position1 {
+    width: 300px;
+    height: 250px;
+    background-color: blueviolet;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 250px;
+}
+
+.position2 {
+    width: 300px;
+    height: 250px;
+    background-color: rgb(43, 168, 226);
+    text-align: center;
+    vertical-align: middle;
+    line-height: 250px;
+    position: absolute;
+}
+
+.position3 {
+    width: 300px;
+    height: 250px;
+    background-color: rgb(226, 147, 43);
+    text-align: center;
+    vertical-align: middle;
+    line-height: 250px;
+    position: absolute;
+}
