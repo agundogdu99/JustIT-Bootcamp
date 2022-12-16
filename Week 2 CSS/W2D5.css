@@ -1,0 +1,81 @@
+/* font size task ?*
+
+/* .p1 {
+    font-size: 2rem;
+}
+
+.p2 {
+font-size: 3em;
+}
+
+.p3 {
+font-size: 5vh;
+}
+
+.p4 {
+font-size: 5vw;
+}
+
+.p5 {
+font-size: 5px;
+}
+
+.p6 {
+font-size: 5%;
+} */
+
+
+
+/* media queries */
+
+/* @media (min-width:1000px) {
+    body {
+        background-color: blueviolet;
+    }
+}*/
+
+div {
+    font-size: x-large;
+    height: 100px;
+    width: 100px;
+    border: 5px solid black;
+    background-color: aqua;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 10px 10px 20px 20px red;
+    text-shadow: 5px 5px 5px rgb(92, 3, 3);
+}
+
+
+
+@media (min-width:700px) and (max-width:900px) {
+    .div1 {
+        background-color: blue;
+    }
+    .div3 {
+        background-color: coral;
+    }
+} 
+
+ @media (min-width:900px) and (max-width:1000px) {
+    .div2 {
+        background-color: chartreuse;
+    }
+} 
+
+
+/* BEFORE AND AFTER PSEUDO SELECTORS - Insert somethings BEFORE and AFTER elements element::before element::after */
+
+.myp1::before {
+    content: "This is Paragraph 1!!!! - ";
+    border: 5px solid black;
+}
+
+.myp1::after {
+content: url(https://seeklogo.com/images/N/new-google-favicon-logo-5E38E037AF-seeklogo.com.png);    
+border: 5px solid black;
+float: right;
+
+} 
