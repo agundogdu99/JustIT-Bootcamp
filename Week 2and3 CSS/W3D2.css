@@ -1,0 +1,55 @@
+/*
+Transform in CSS - we can rotate, move, skew a html element
+*/
+
+div {
+    width: 400px;
+    height: 200px;
+    border: 2px solid;
+}
+
+.div1 {
+    background-color: blueviolet;
+    transform: rotate(45deg);
+}
+
+.div2 {
+    background-color: rgb(145, 110, 177);
+    transform: skew(10deg, 15deg);
+}
+
+/*
+Transform with Transition
+*/
+
+.div3 {
+    background-color: rgb(20, 37, 68);
+    transition: transform 4s;
+    
+}
+
+.div3:hover {
+    transform: rotate(90deg);
+}
+
+.div4 {
+    background-color: rgb(133, 24, 78);
+    transition: width 3s, transform 3s;
+    
+}
+
+.div4:hover {
+    width: 200px;
+    transform:rotate(45deg) 
+}
+
+.div5 {
+    transition: background-color 3s, transform 3s, height 3s, width 3s;
+}
+
+.div5:hover {
+    background-color: brown;
+    transform: rotate(-45deg);
+    width: 500px;
+    height: 350px;
+}

@@ -1,0 +1,122 @@
+/*
+Variable and custom properties
+
+Root element is HTML
+
+var()  - is a function/method.. we insert the value of a css variable
+    variable: value;
+    we soecify variable of different scope.
+    global variable i.e.(:root{} selector)- and local variables
+
+*/
+
+:root{
+    --white: #fefafa;
+    --blue: #474781;
+    --yellow: #caaf16;
+    --customtextshadow: 5px 5px 3px #942828;
+    --centrealign: center;
+    --h1font: 60px;
+    --pfont: 20px;
+    --largepfont: 35px;
+}
+
+body{
+    background-color: var(--blue);
+}
+
+h1{
+    color: var(--white);
+    text-align: var(--centrealign);
+}
+
+p{
+    color: var(--yellow);
+}
+
+.shadow-p {
+    text-shadow: var(--customtextshadow);
+    font-size: var(--largepfont);
+}
+
+/* TRANSITION IN CSS - to create the transition effect, we must specify 2 things:  
+    - css property that we want to add an effect
+    - the duration of th effect (must ve greater than 0)
+    */
+
+.transition{
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    transition: width 3s;
+}
+
+.transition:hover{
+    width: 200px;
+}
+
+.trans-button {
+    width: 70px;
+    height: 30px;
+    border: none;
+    background-color: deeppink;
+    color: aliceblue;
+    transition: background-color 3s, color 3s, width 3s, border-radius 3s;
+}
+
+.trans-button:hover{
+    background-color: aliceblue;
+    color: deeppink;
+    width: 100px;
+    border-radius: 5px;
+}
+
+
+
+
+.animation{
+    width: 100px;
+    height: 100px;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/919/919827.png);
+    background-size: cover;
+    position: relative;
+    animation-name: divanimation;
+    animation-duration: 9s;
+}
+
+.animation:hover{
+    
+}
+
+@keyframes divanimation {
+    0%{background-image: url(https://cdn-icons-png.flaticon.com/512/919/919827.png); left: 0px; top: 0px; }
+    25%{background-image: url(https://cdn-icons-png.flaticon.com/512/732/732190.png); left: 200px; top: 0px; }
+    50%{background-image: url(https://cdn-icons-png.flaticon.com/512/5968/5968292.png); left: 200px; top: 200px; }
+    75%{background-image: url(https://as1.ftcdn.net/v2/jpg/02/49/94/32/1000_F_249943294_eNaSuA7290IzaryLuBBeCcSgjVuxMBYr.jpg); left: 0px; top: 200px; }
+    100%{background-image: url(https://cdn-icons-png.flaticon.com/512/919/919827.png); left: 0px; top: 0px; }
+} 
+
+/* @keyframes divanimation {
+    0%{background-color: var(--white); left: 0px;}
+    20%{background-color: var(--yellow); left: 150px;}
+    50%{background-color: #942828; left: 300px;}
+    100%{background-color: #5c8147; left: 0px;}
+}  */
+
+.animated-div {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(16, 182, 182);
+    position: relative;
+    animation-name: divanimation2;
+    animation-duration: 10s;
+    animation-delay: 3s;
+}
+
+@keyframes divanimation2 {
+    0%{background-color: rgb(16, 182, 182); left: 0px; top: 0px;}
+    25%{background-color: brown; left: 300px; top: 0px;}
+    50%{background-color: darkgoldenrod; left: 300px; top: 300px;}
+    75%{background-color: grey; left: 0px; top: 300px;}
+    100%{background-color: rgb(16, 182, 182); left: 0px; top: 0px;}
+}
