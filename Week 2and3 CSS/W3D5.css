@@ -1,0 +1,29 @@
+/* 
+CSS SELECTOR TYPES:
+
+class
+ID
+Element Name
+Group selector
+
+
+:nth-child(n)
+
+n=1,2,3,4,5,6,7,8,9
+
+p:nth-child(2n) {
+    background-color: red;
+}
+
+p::after {
+
+}
+
+
+
+*/
+
+input[title="lastname"] {
+    background-color: violet;
+    width: 100%;
+}
