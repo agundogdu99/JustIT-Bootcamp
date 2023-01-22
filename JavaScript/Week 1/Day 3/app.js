@@ -85,3 +85,23 @@ do {
     console.log(x)
     y++
 } while (y < 10);
+
+
+
+function subLength(string, char) {
+  let arrayString = string.split('');
+  let count = 0;
+  arrayString.forEach(letter => {
+    if (letter === char) {
+      count++;
+    }
+    }
+  )
+
+  if (count === 2) {
+    return (arrayString.lastIndexOf(char)) - (arrayString.lastIndexOf(char))
+  }
+
+}
+
+console.log(subLength('alduyan', 'a'))
