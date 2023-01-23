@@ -1,0 +1,20 @@
+/* Task:
+
+Create a new folder and add an index.html, style.css and app.js to it. Add your HTML boilerplate and correctly link the three files.
+
+Add a h1 element to your HTML with the an “id” attribute of title.
+
+Add some CSS rules to your stylesheet inside a class or id selector, to be applied to a new element later.
+
+Using JavaScript I would like you to query the DOM, selecting the h1 element and storing it in a variable. 
+Add the corresponding class or id attribute to the element in order for it to match the CSS rules already written in your CSS file. 
+I would also like you to update the text content of your title element to say something new.
+
+Using the DOM I want you to add a ul to your page, then create and add three li’s to your ul. Then using a loop add some styling all of your list items.
+
+Finally I want you to use JavaScript to remove your page title element. */
+
+#title {
+    color: rgb(34, 34, 100);
+    text-align: center;
+}

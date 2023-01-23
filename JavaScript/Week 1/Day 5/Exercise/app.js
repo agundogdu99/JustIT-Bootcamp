@@ -6,7 +6,7 @@ const person = {
   age: 35,
   city: "London",
   greet() {
-    console.log(`Hello ${this.usersName}!`);
+    return `Hello ${this.usersName}!`;
   },
 };
 
