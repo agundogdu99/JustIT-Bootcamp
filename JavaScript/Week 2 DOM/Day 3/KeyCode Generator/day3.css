@@ -1,0 +1,31 @@
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(179, 38, 66);
+}
+
+
+.infoContainer {
+    background-color: rgb(182, 75, 96);
+    text-align: center;
+    margin: 50px;
+    min-height: 100px;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.infoTitle {
+    flex-basis: 49%;
+}
+
+
+
+.container {
+    display: none;
+    justify-content: space-around;
+}
