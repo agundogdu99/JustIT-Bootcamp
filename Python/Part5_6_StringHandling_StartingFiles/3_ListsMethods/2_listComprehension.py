@@ -52,6 +52,8 @@ commonNums = [nums for nums in cList if nums in dList]
 print(
     f"The common numbers in both list c and d using list comprehension:\n{commonNums}\n"
 )
+
+
 "This is not list comprehension"
 squareNums = []
 for nums in range(5):

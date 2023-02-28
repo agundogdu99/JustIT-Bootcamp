@@ -1,0 +1,9 @@
+Programming Part8  Set, Tuples and Exception Handling
+1. Exception Handling
+●	Use and import the logging 
+●	Set, log and display messages in terminal with different severity levels
+●	Configure filepath and write logs to file with different severity levels
+●	Use exception hadling to log errors with different severity levels to file 
+
+Collections 2: Dictionary, Set, List and Tuples
+●	Walk through code that uses the  Dictionary, Set, List and Tuples data structure.

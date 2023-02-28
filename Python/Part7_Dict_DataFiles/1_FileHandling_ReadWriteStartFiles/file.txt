@@ -1,0 +1,4 @@
+Python Programming updated
+Python Programming updated one more
+line using append
+Appended using 'with' 'as'
