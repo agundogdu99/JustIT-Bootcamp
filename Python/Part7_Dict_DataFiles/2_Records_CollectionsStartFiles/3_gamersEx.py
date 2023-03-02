@@ -24,8 +24,8 @@ while addPlayer:
     pScore = float(input("Enter your Player Score: "))
     pHscore = float(input("Enter your Player High Score: "))
 # Exercise:  Create a dictionary below to hold player profiles
-# Here you need to assign the values captured and stored in the variables to a key
-# an example of a key has been done for you
+# Here you need to assign the values # an example of a key has been done for you
+# captured and stored in the variables to a key
     playerProfile = {
         "playerName": pName,
         "playerPass": pPass,
@@ -44,8 +44,8 @@ print(f"List of players:\n {playersList} ")
 
 
 # write data to file, using one of the previous write method examples ?
-with open("add your path to file here/add filetowriteto.txt", "a") as file1Path:
-    strData = str(?)  # convert list to string
+with open("gamers.txt", "a") as file1Path:
+    strData = str(playersList)  # convert list to string
     file1Path.write(f"\n{strData}")
 
 
