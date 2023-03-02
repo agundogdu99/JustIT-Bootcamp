@@ -5,9 +5,9 @@ from time import sleep
 
 def update():
     try:
-        idField = input("Which song ID do you want to update? ")
+        idField = input("Which Member ID do you want to update? ")
 
-        cursor.execute(f"SELECT * FROM songs where songID = {idField}")
+        cursor.execute(f"SELECT * FROM members where memberID = {idField}")
         # Fethes the above selected record
         row = cursor.fetchone()
 
@@ -16,10 +16,10 @@ def update():
         else:
 
             fieldName = input(
-                "Which field do you want to update? (Title, Artist or Genre): "
+                "Which field do you want to update? (Firstname, Lastname or Email): "
             ).title()
             newFieldValue = input(
-                f"Enter the value for the {fieldName} field: ")
+                f"Enter the New value for the {fieldName} field: ")
 
             print(
                 f"This is the new field value as was entered {newFieldValue}")
@@ -27,13 +27,12 @@ def update():
             print(
                 f"This is the new field value as was amended {newFieldValue}")
 
-            # Selects the song with specific ID - idField
             cursor.execute(
-                f"UPDATE songs SET {fieldName} = {newFieldValue} WHERE songID = {idField}"
+                f"UPDATE members SET {fieldName} = {newFieldValue} WHERE memberID = {idField}"
             )
-            # Fethes the above selected record
+
             conn.commit()
-            print(f"Record with SongID {idField} updated")
+            print(f"Record with Member ID {idField} updated")
             sleep(3)
             read()
     except sql.OperationalError as e:
