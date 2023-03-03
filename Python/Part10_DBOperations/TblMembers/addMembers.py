@@ -2,7 +2,6 @@ from connect import *
 from time import sleep
 from readMembers import *
 
-
 # Define function
 
 
@@ -25,7 +24,7 @@ def insertMembers():
     "   OR  "
     # Insert INTO songs VALUE (NULL, "A", "B", "C")
 
-    try:        # Read into SQL injection - to prevent hacking
+    try:  # Read into SQL injection - to prevent hacking
         cursor.execute("INSERT INTO members VALUES (NULL, ?, ?, ?)", members)
         conn.commit()  # Make the changes permanent
         print(f"{firstName} {lastName} added in the members table")
