@@ -5,6 +5,7 @@ sys.path.insert(0, "Python/Part10_DBOperations/TblMembers")
 sys.path.insert(0, "Python/Part10_DBOperations/TblDownloads")
 import songsmenu
 import membersmenu
+import downloadsmenu
 
 
 def dbMenuOptions():
@@ -31,7 +32,7 @@ while mainProgram:
     elif dbMenu == "2":
         membersmenu.dbMembers()
     elif dbMenu == "3":
-        print("Welcome to downloads")
+        downloadsmenu.dbDownloads()
     else:
         print("Exiting the songs menu")
         mainProgram = False
